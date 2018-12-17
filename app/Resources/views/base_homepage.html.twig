@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>{% block title %}Lifpartner.toay{% endblock %}</title>
+
+        {% block stylesheets %}
+            <!-- Bootstrap -->
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+            <!-- end Google Font -->
+            <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300' rel='stylesheet'
+                  type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Oswald:400,500,600,700,800,300' rel='stylesheet' type='text/css'>
+            <!-- owl carousel SLIDER -->
+            <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
+
+            <!-- Animation Effect CSS -->
+            <link rel="stylesheet" href="{{ asset('css/animation.css') }}">
+
+            <!-- Main Stylesheet CSS -->
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+            <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+            <link rel="stylesheet" type="text/css" href="{{ asset('plugins/rs-plugin/css/settings.css') }}" media="screen"/>
+
+            <style>
+                @font-face {
+                    font-family: 'great_vibesregular';
+                    src: url( '{{ asset('fonts/greatvibes-regular-webfont.woff2') }}') format('woff2'),
+                    url('{{ asset('fonts/greatvibes-regular-webfont.woff') }}') format('woff'),
+                    url('{{ asset('fonts/greatvibes-regular-webfont.ttf') }}') format('truetype');
+                    font-weight: normal;
+                    font-style: normal;
+
+                }
+            </style>
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body data-spy="scroll" data-offset="25" style="overflow-x: hidden">
+        {% block body %}{% endblock %}
+
+
+        {% block javascripts %}
+            <script src="{{ asset('javaScripts/jquery.js') }}"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="{{ asset('javaScripts/bootstrap.js') }}"></script>
+            <script src="{{ asset('javaScripts/smooth-scroll.js') }}"></script>
+            <script src="{{ asset('javaScripts/jquery.parallax-1.1.3.js')}}"></script>
+            <script src="{{ asset('javaScripts/owl.carousel.js')}}"></script>
+            <script src="{{ asset('javaScripts/jquery.easypiechart.min.js')}}"></script>
+            <script src="{{ asset('javaScripts/jquery.jigowatt.js')}}"></script>
+            <script src="{{ asset('javaScripts/custom.js')}}"></script>
+            <script src="{{ asset('javaScripts/jquery.unveilEffects.js')}}"></script>
+            <script src="{{ asset('javaScripts/jquery.isotope.min.js')}}"></script>
+
+            <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+            <script type="text/javascript" src="{{ asset('plugins/rs-plugin/js/jquery.themepunch.plugins.min.js')}}"></script>
+            <script type="text/javascript" src="{{ asset('plugins/rs-plugin/js/jquery.themepunch.revolution.min.js')}}"></script>
+
+            <!-- Animation Scripts-->
+            <script src="{{ asset('javaScripts/scrollReveal.js')}}"></script>
+
+            <script src="{{ asset('javaScripts/jquery.prettyPhoto.js')}}"></script>
+
+            <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            {#<!--[if lt IE 9]>#}
+            <script src="{{ asset('javaScripts/html5shiv.js')}}"></script>
+            <script src="{{ asset('javaScripts/respond.min.js')}}"></script>
+            {#<![endif]-->#}
+
+        {% endblock %}
+    </body>
+</html>

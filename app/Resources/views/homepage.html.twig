@@ -1,0 +1,820 @@
+{% extends "base_homepage.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .loader {
+            background: url('{{ asset('images/homepage/loader.gif') }}') no-repeat center;
+        }
+
+        .bride {
+            background-image: url('{{ asset('images/homepage/bride.jpg') }}');
+            float: left;
+            margin-right: 30px;
+            border: solid #f721f0;
+        }
+
+        .groom {
+            background-image: url('{{ asset('images/homepage/groom.jpg') }}');
+            float: right;
+            border: solid #f721f0;
+            margin-left: 30px;
+        }
+    </style>
+
+{% endblock %}
+
+{% block body %}
+    <header class="header">
+        <div class="container">
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand"> LIFE <br> <span class="slogo"> PARTNER </span> </a>
+                    </div><!-- end navbar-header -->
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="active"><a data-scroll href="#home" class="int-collapse-menu">Home</a></li>
+                            <li><a data-scroll href="#features" class="int-collapse-menu">Why Us ?</a></li>
+                            <li><a data-scroll href="#about" class="int-collapse-menu">About</a></li>
+                            <li><a data-scroll href="#services" class="int-collapse-menu">Services</a>
+                            <li><a data-scroll href="#contact" class="int-collapse-menu">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li style="background-color: #74077b;"><a data-scroll href="register.html" class="int-collapse-menu">Register</a></li>
+                            <li><a data-scroll href="register.html" class="int-collapse-menu dropdown"><i class="fas fa-user" style="margin-right: 7px;"></i>Login</a></li>
+                        </ul>
+
+                        <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                        <!--</ul>-->
+                        <!--</li>-->
+
+
+                    </div><!--/.nav-collapse -->
+                </div><!--/.container-fluid -->
+            </div>
+        </div><!-- end container -->
+    </header><!-- end header -->
+
+    <!--/HEADER SECTION -->
+    <div class="animationload">
+        <div class="loader">Loading...</div>
+    </div> <!-- End Preloader -->
+
+    <div class="brand-promotion">
+        <div class="container">
+            <h2 class="looking-for">I AM LOOKING FOR </h2>
+            <div class="media row">
+                <div class="col-sm-6">
+                    <div class="brand-content wow fadeIn animated"
+                         style="visibility: visible; -webkit-animation: fadeIn 700ms 300ms;">
+                        <div class="media-body">
+                            <div class="bride-groom bride"></div>
+                            <h2>A Bride</h2>
+                            <p>Proceed from here if you are a male who is looking for a female life partner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="brand-content wow fadeIn animated"
+                         style="visibility: visible; -webkit-animation: fadeIn 700ms 400ms;">
+                        <div class="media-body">
+                            <div class="bride-groom groom"></div>
+                            <h2>A Groom</h2>
+                            <p>Proceed from here if you are a female who is looking for a male life partner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/SLIDER SECTION -->
+    <section id="home" class="sliderwrapper clearfix">
+
+        <div class="tp-banner-container">
+            <div class="tp-banner">
+                <ul>
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+                        <!-- MAIN IMAGE -->
+                        <img src="{{ asset('images/homepage/slider_1.jpg') }}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
+                             data-bgrepeat="no-repeat">
+                        <div class="tp-dottedoverlay twoxtwo"></div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption rev-video  customin customout start"
+                             data-x="center"
+                             data-hoffset="0"
+                             data-y="10"
+                             data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="1000"
+                             data-start="500"
+                             data-easing="Back.easeInOut"
+                             data-endspeed="300">
+                            <hr class="topline" style="border-top: 2px solid #f721f0;">
+                            <h2>Let your love discover you</h2>
+                            <hr class="bottomline" style="border-top: 2px solid #f721f0;">
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption rev-video2 customin customout start"
+                             data-x="center"
+                             data-hoffset="0"
+                             data-y="150"
+                             data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="2200"
+                             data-start="500"
+                             data-easing="Back.easeInOut"
+                             data-endspeed="300"><p> With our interactive system, <br> your life
+                                partner will not take much time to reach you</p>
+                        </div>
+                    </li>
+
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+                        <!-- MAIN IMAGE -->
+                        <img src="{{ asset('images/homepage/slider_2.jpg') }}" alt="slidebg2" data-bgfit="cover" data-bgposition="center center"
+                             data-bgrepeat="no-repeat">
+                        <div class="tp-dottedoverlay twoxtwo"></div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption rev-video skewfromleft customout"
+                             data-x="center"
+                             data-y="10"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="800"
+                             data-start="1500"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="300"
+                             data-endeasing="Power1.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 6">
+                            <hr class="topline" style="border-top: 2px solid #f721f0;">
+                            <h2>Love is composed of a single soul<br>inhabiting two bodies</h2>
+                            <hr class="bottomline" style="border-top: 2px solid #f721f0;">
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption rev-video2 skewfromright customout"
+                             data-x="center" data-hoffset="0"
+                             data-y="190"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="800"
+                             data-start="1700"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="300"
+                             data-endeasing="Power1.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 7"><p>You are fully protected within in our
+                                system</p>
+                        </div>
+                    </li>
+
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+                        <!-- MAIN IMAGE -->
+                        <img src="{{ asset('images/homepage/slider_3.jpg') }}" alt="slidebg3" data-bgfit="cover" data-bgposition="center center"
+                             data-bgrepeat="no-repeat">
+                        <div class="tp-dottedoverlay twoxtwo"></div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption rev-video skewfromleft customout"
+                             data-x="center"
+                             data-y="10"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="800"
+                             data-start="1500"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="300"
+                             data-endeasing="Power1.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 6">
+                            <hr class="topline" style="border-top: 2px solid #f721f0;">
+                            <h2>What's meant to be<BR>will always find a way</h2>
+                            <hr class="bottomline" style="border-top: 2px solid #f721f0;">
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption rev-video2 skewfromright customout"
+                             data-x="center" data-hoffset="0"
+                             data-y="190"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="800"
+                             data-start="1700"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="300"
+                             data-endeasing="Power1.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 7"><p >Let us know your success story <br> We will
+                                tell the whole world about it</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="tp-bannertimer"></div>
+            </div>
+        </div>
+    </section><!-- end slider-wrapper -->
+
+
+    <section id="features" class="feature-wrapper">
+        <div class="container">
+            <div data-scroll-reveal="enter from the bottom after 0.3s" class="title text-center" data-scroll-reveal-id="2"
+                 data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+                <h2>Why Us ?</h2>
+                <p>All we need is your satisfaction</p>
+                <hr>
+            </div>
+
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                <div class="widget">
+                    <h3> WHY Choose Atlas Creative ?</h3>
+                    <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt
+                        tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+                        eros.</p>
+                    <div id="accordion-second" class="clearfix">
+                        <div class="accordion" id="accordion2">
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                                       href="#collapseOne">
+                                        <em class="fa fa-plus icon-fixed-width"></em>Atlas Creative is fully responsive and
+                                        perfectly fits on any Mobile device.
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                                       href="#collapseTwo">
+                                        <em class="fa fa-plus icon-fixed-width"></em>Atlas Creative is automatically creates
+                                        retina ready images.
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                                       href="#collapseThree">
+                                        <em class="fa fa-plus icon-fixed-width"></em>Atlas Creative contains 365 Retina
+                                        Ready Font Awesome icons.
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                                       href="#collapseFour">
+                                        <em class="fa fa-plus icon-fixed-width"></em>Atlas Creative is Powerful Admin Panel
+                                    </a>
+                                </div>
+                                <div id="collapseFour" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                                       href="#collapseFive">
+                                        <em class="fa fa-plus icon-fixed-width"></em>Atlas Creative comes with Unlimited
+                                        Color Schemes
+                                    </a>
+                                </div>
+                                <div id="collapseFive" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor...
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end accordion -->
+                    </div><!-- end accordion first -->
+                </div><!-- end widget -->
+            </div><!-- end col-lg-6 -->
+
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <div class="widget">
+                    <h3>LATEST NEWS</h3>
+                    <div id="owl-blog" class="owl-carousel">
+                        <div class="blog-carousel">
+                            <div class="entry">
+                                <img src="demos/work_03.jpg" alt="" class="img-responsive">
+                                <div class="magnifier">
+                                    <div class="buttons">
+                                        <a class="st" rel="bookmark" href="blog-single-sidebar.html"><i
+                                                    class="fa fa-link"></i></a>
+                                    </div><!-- end buttons -->
+                                </div><!-- end magnifier -->
+                                <div class="post-type">
+                                    <i class="fa fa-picture-o"></i>
+                                </div><!-- end pull-right -->
+                            </div><!-- end entry -->
+                            <div class="blog-carousel-header">
+                                <h3><a title="" href="blog-single-sidebar.html">New Graphic Designer on the block</a></h3>
+                            </div><!-- end blog-carousel-header -->
+
+                        </div><!-- end blog-carousel -->
+                        <div class="blog-carousel">
+                            <div class="entry">
+                                <img src="demos/work_04.jpg" alt="" class="img-responsive">
+                                <div class="magnifier">
+                                    <div class="buttons">
+                                        <a class="st" rel="bookmark" href="blog-single-sidebar.html"><i
+                                                    class="fa fa-link"></i></a>
+                                    </div><!-- end buttons -->
+                                </div><!-- end magnifier -->
+                                <div class="post-type">
+                                    <i class="fa fa-picture-o"></i>
+                                </div><!-- end pull-right -->
+                            </div><!-- end entry -->
+                            <div class="blog-carousel-header">
+                                <h3><a title="" href="blog-single-sidebar.html">New Graphic Designer on the block</a></h3>
+                            </div><!-- end blog-carousel-header -->
+
+                        </div><!-- end blog-carousel -->
+                    </div><!-- end owl-blog -->
+                </div><!-- end widget -->
+            </div><!-- end col-lg-6 -->
+        </div><!-- end container -->
+    </section><!-- end grey-wrapper -->
+
+
+    <!--/ ABOUT SECTION -->
+    <section id="about" class="about-wrapper">
+        <div class="container">
+            <div data-scroll-reveal="enter from the bottom after 0.3s" class="title text-center">
+                <h2>About</h2>
+                <p>ETIAM DIGNISSIM LEO VESTIBULUM VOLUTPAT MORB</p>
+                <hr>
+            </div><!-- end title -->
+
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div data-scroll-reveal="enter from the bottom after 0.4s" class="about-box">
+                        <div class="about-border"><i class="fa fa-tablet aligncenter"></i></div>
+                        <h3>RESPONSIVE DESIGN</h3>
+                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus
+                            ullamcorper nibh dolor</p>
+                    </div>
+                </div><!-- end column -->
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div data-scroll-reveal="enter from the bottom after 0.5s" class="about-box">
+                        <div class="about-border"><i class="fa fa-bars aligncenter"></i></div>
+                        <h3>EXCELLENT FEATURES</h3>
+                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus
+                            ullamcorper nibh dolor</p>
+                    </div>
+                </div><!-- end column -->
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div data-scroll-reveal="enter from the bottom after 0.5s" class="about-box">
+                        <div class="about-border"><i class="fa fa-folder-o aligncenter"></i></div>
+                        <h3>SIMPLE & CLEAN</h3>
+                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus
+                            ullamcorper nibh dolor</p>
+                    </div>
+                </div><!-- end column -->
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div data-scroll-reveal="enter from the bottom after 0.5s" class="about-box">
+                        <div class="about-border"><i class="fa fa-gear aligncenter"></i></div>
+                        <h3>PARALLAX EFFECTS</h3>
+                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus
+                            ullamcorper nibh dolor</p>
+                    </div>
+                </div><!-- end column -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+
+        <div class="clearfix">
+            <div class="widget-wrapper">
+                <div class="container">
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                        <div class="widget">
+                            <h3>WHY <span>Atlas Creative</span> IS SIMPLE &amp; VERY POWERFUL?</h3>
+                            <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                tincidunt tempus. Donec vitae sapien ut libero venenatis
+                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                tincidunt tempus. Donec vitae sapien ut libero venenatisNam quam nunc, blandit vel, luctus
+                                pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                                sapien ut libero venenatis
+                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                tincidunt tempus. Donec vitae sapien ut libero venenatis
+                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                tincidunt tempus. Donec vitae sapien ut libero venenatis
+                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                tincidunt tempus. Donec vitae sapien ut libero venenatis
+                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                tincidunt tempus. Donec vitae sapien ut libero venenatis
+                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                tincidunt tempus. Donec vitae sapien ut libero venenatis
+                                faucibus. Nullam quis ante. Etiam sit amet orci eget eros. <a href="#"> Read More </a></p>
+
+                        </div><!-- end widget -->
+                    </div><!-- end col-lg-6 -->
+
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                        <img class="img-responsive" src="img/life partner logo.png" alt="" style="padding-top: 50px;">
+                    </div><!-- end col-lg-6 -->
+                </div><!-- end container -->
+            </div>
+        </div>
+    </section><!-- End About Section -->
+
+
+    <!--/ COUNT SECTION -->
+    <section id="count_parallax" class="parallax" style="background-image: url('{{ asset('images/homepage/counter_bg.jpg') }}'); z-index: 9;"
+             data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+        <div class="overlay">
+            <div class="container">
+                <div class="stat f-container">
+                    <div class="f-element col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="milestone-counter">
+                            <i class="fa fa-user fa-3x"></i>
+                            <span class="stat-count highlight">122</span>
+                            <div class="milestone-details">Happy Customers</div>
+                        </div>
+                    </div>
+                    <div class="f-element col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="milestone-counter">
+                            <i class="fa fa-coffee fa-3x"></i>
+                            <span class="stat-count highlight">4226</span>
+                            <div class="milestone-details">Ordered Coffee's</div>
+                        </div>
+                    </div>
+                    <div class="f-element col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="milestone-counter">
+                            <i class="fa fa-trophy fa-3x"></i>
+                            <span class="stat-count highlight">14</span>
+                            <div class="milestone-details">Awards Win</div>
+                        </div>
+                    </div>
+                    <div class="f-element col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="milestone-counter">
+                            <i class="fa fa-camera fa-3x"></i>
+                            <span class="stat-count highlight">232</span>
+                            <div class="milestone-details">Photos Taken</div>
+                        </div>
+                    </div>
+                </div><!-- stat -->
+            </div><!-- end container -->
+        </div><!-- end overlay -->
+    </section>
+
+    <!--/ SERVICE SECTION -->
+    <section id="services" class="white-wrapper">
+        <div class="container">
+            <div class="title text-center">
+                <h2>Services we offer</h2>
+                <p>ETIAM DIGNISSIM LEO VESTIBULUM VOLUTPAT MORB</p>
+                <hr>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div data-scroll-reveal="enter from the bottom after 0.3s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-lightbulb-o alignleft"></i></div>
+                        <h3>Design & Development</h3>
+                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus
+                            ullamcorper nibh dolor</p>
+                    </div>
+                </div>
+
+                <div data-scroll-reveal="enter from the bottom after 0.6s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-laptop alignleft"></i></div>
+                        <h3>VIDEO PRODUCTION</h3>
+                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus
+                            ullamcorper nibh dolor</p>
+                    </div>
+                </div>
+
+                <div data-scroll-reveal="enter from the bottom after 0.9s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-headphones alignleft"></i></div>
+                        <h3>24/7 SUPPORT</h3>
+                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus
+                            ullamcorper nibh dolor</p>
+                    </div>
+                </div>
+            </div> <!-- end row 1 -->
+
+            <div class="row">
+                <div data-scroll-reveal="enter from the bottom after 1.2s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-mobile alignleft"></i></div>
+                        <h3>MOBILE APPS</h3>
+                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus
+                            ullamcorper nibh dolor</p>
+                    </div>
+                </div>
+
+                <div data-scroll-reveal="enter from the bottom after 1.5s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-shopping-cart alignleft"></i></div>
+                        <h3>ONLINE SHOPPING</h3>
+                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus
+                            ullamcorper nibh dolor</p>
+                    </div>
+                </div>
+
+                <div data-scroll-reveal="enter from the bottom after 1.8s" class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-border"><i class="fa fa-gears alignleft"></i></div>
+                        <h3>SOCIAL MEDIA</h3>
+                        <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus
+                            ullamcorper nibh dolor</p>
+                    </div>
+                </div>
+            </div> <!-- end row 2 -->
+
+            <!-- TESTIMONIAL SECTION -->
+            <div class="testimonial text-center">
+                <h2 class="three" data-scroll-reveal="enter from the bottom after 0.2s">Success Stories</h2>
+            </div><!-- end title -->
+
+            <div id="testimonial" class="owl-carousel owl-theme text-center">
+                <div class="testimonial" data-scroll-reveal="enter from the bottom after 0.3s">
+                    <div class="bride-groom groom"></div>
+                    <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper
+                        nibh dolor</p>
+                    <h1> DANIEL Smith </h1>
+                </div>
+                <div class="testimonial">
+                    <div class="bride-groom groom"></div>
+                    <p>A dsfadsfads In sagittis, eros faucibus ullamcorper nibh dolor</p>
+                    <h1> DANIEL Smith </h1>
+                </div>
+                <div class="testimonial">
+                    <div class="bride-groom groom"></div>
+                    <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper
+                        nibh dolor</p>
+                    <h1> DANIEL Smith </h1>
+                </div>
+            </div><!-- end #testimonial -->
+
+            <div class="customNavigation">
+                <a class="btn prev"><i class="fa fa-angle-left fa-2x"></i></a>
+                <a class="btn next"><i class="fa fa-angle-right fa-2x"></i></a>
+            </div><!-- end customnav -->
+        </div> <!-- end container -->
+    </section><!-- Service and Testimonial End -->
+
+
+    <!--/ CONTACT AND MAP SECTION -->
+    <section id="contact" class="contact-wrapper">
+        <div class="title text-center">
+            <h2>Contact Us</h2>
+            <p>ETIAM DIGNISSIM LEO VESTIBULUM VOLUTPAT MORB</p>
+            <hr>
+        </div><!-- end title -->
+        <div class="contact_tab text-center">
+            <ul id="myTab" class="container text-center nav nav-tabs" role="tablist">
+                <li class="active"><a href="#tab1" role="tab" data-toggle="tab">Contact Details</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="tab1">
+                    <div class="container">
+                        <p>Eget pede fringilla rutrum. Fusce eget tortor vel magna iaculis convallis. Mauris molestie magna.
+                            Mauris Integer eget arcu. asiscing eleifend dui. Nullam lectus neque, blandit quis, mattis quis,
+                            varius eros. Proin porta pellentesque ante.Fusce In sagittis eros aliquam quis purus nunc ut
+                            turpis sed </p>
+                        <div id="message"></div>
+                        <form id="contactform" action="contact.php" name="contactform" method="post"
+                              data-scroll-reveal="enter from the bottom after 0.4s">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Name"
+                                       style="border: 1px solid #f721f0;">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <input type="text" name="email" id="email" class="form-control" placeholder="Email Address"
+                                       style="border: 1px solid #f721f0;">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject"
+                                       style="border: 1px solid #f721f0;">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Message"
+                                      style="border: 1px solid #f721f0;"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" value="SEND" id="submit" class="btn btn-lg btn-contact btn-primary">
+                                    SUBMIT
+                                </button>
+                            </div>
+                        </form> <!-- End Form -->
+                    </div> <!-- End Container -->
+                </div><!-- End Tab Pane -->
+
+            </div><!-- /end my tab content -->
+        </div><!-- /contact_tab -->
+
+        <div class="container">
+            <div class="title text-center">
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="contact-box" data-scroll-reveal="enter from the bottom after 0.6s">
+                        <a title="" href="#"><i class="far fa-envelope fa-3x aligncenter"></i></a>
+                        <h2>HELL@ATLAS.COM</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="contact-box" data-scroll-reveal="enter from the bottom after 0.6s">
+                        <a title="" href="#"><i class="fas fa-map-marker-alt fa-3x aligncenter"></i></a>
+                        <h2>ATLAS PTY LTD, MELBOURNE, AUSTRALIA </h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="contact-box" data-scroll-reveal="enter from the bottom after 0.6s">
+                        <a title="" href="#"><i class="fas fa-phone fa-3x aligncenter"></i></a>
+                        <h2>+8 ATLAS 6666 </h2>
+                    </div>
+                </div>
+            </div> <!-- end title -->
+        </div><!-- end container -->
+
+    </section><!--/ Contact End -->
+
+    <!--/ FOOTER SECTION-->
+    <section id="footer" class="footer-wrapper text-center">
+        <div class="container">
+            <div class="title text-center" data-scroll-reveal="enter from the bottom after 0.5s">
+                <div class="aligncenter">
+                    <div class="col-sm-4">
+                        <a href="index.html" style="text-align: left;" class="navbar-brand">LIFE <br> <span class="slogo">PARTNER </span></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="socialFooter">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+
+                            <a href="#"><i class="fa fa-flickr"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Designed by © 2015 <a href="http://www.createwebsite.net">Create Website</a></p>
+                    </div>
+                </div>    <!-- end title -->
+            </div>  <!-- end container -->
+        </div>
+    </section><!--/ Footer  End -->
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script>
+        (function ($) {
+            var $container = $('.masonry_wrapper'),
+                colWidth = function () {
+                    var w = $container.width(),
+                        columnNum = 1,
+                        columnWidth = 0;
+                    if (w > 1200) {
+                        columnNum = 3;
+                    } else if (w > 900) {
+                        columnNum = 3;
+                    } else if (w > 600) {
+                        columnNum = 2;
+                    } else if (w > 300) {
+                        columnNum = 1;
+                    }
+                    columnWidth = Math.floor(w / columnNum);
+                    $container.find('.item').each(function () {
+                        var $item = $(this),
+                            multiplier_w = $item.attr('class').match(/item-w(\d)/),
+                            multiplier_h = $item.attr('class').match(/item-h(\d)/),
+                            width = multiplier_w ? columnWidth * multiplier_w[1] - 4 : columnWidth - 4,
+                            height = multiplier_h ? columnWidth * multiplier_h[1] * 0.5 - 4 : columnWidth * 0.5 - 4;
+                        $item.css({
+                            width: width,
+                            height: height
+                        });
+                    });
+                    return columnWidth;
+                }
+
+            function refreshWaypoints() {
+                setTimeout(function () {
+                }, 1000);
+            }
+
+            $('nav.portfolio-filter ul li a').on('click', function () {
+                var selector = $(this).attr('data-filter');
+                $container.isotope({filter: selector}, refreshWaypoints());
+                $('nav.portfolio-filter ul li a').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            function setPortfolio() {
+                setColumns();
+                $container.isotope('reLayout');
+            }
+
+            isotope = function () {
+                $container.isotope({
+                    resizable: true,
+                    itemSelector: '.item',
+                    masonry: {
+                        columnWidth: colWidth(),
+                        gutterWidth: 0
+                    }
+                });
+            };
+            isotope();
+            $(window).smartresize(isotope);
+        }(jQuery));
+    </script>
+
+    <script type="text/javascript">
+        var revapi;
+        jQuery(document).ready(function () {
+            revapi = jQuery('.tp-banner').revolution(
+                {
+                    delay: 9000,
+                    startwidth: 1170,
+                    startheight: 500,
+                    hideThumbs: 10,
+                    fullWidth: "off",
+                    fullScreen: "on",
+                    fullScreenOffsetContainer: ""
+                });
+        });	//ready
+    </script>
+
+    <script>
+        (function ($) {
+            "use strict"
+            window.scrollReveal = new scrollReveal();
+        })(jQuery);
+    </script>
+
+    <script type="text/javascript">
+        (function ($) {
+            "use strict";
+            jQuery('a[data-gal]').each(function () {
+                jQuery(this).attr('rel', jQuery(this).data('gal'));
+            });
+            jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({
+                animationSpeed: 'slow',
+                slideshow: false,
+                overlay_gallery: false,
+                theme: 'light_square',
+                social_tools: false,
+                deeplinking: false
+            });
+        })(jQuery);
+    </script>
+
+{% endblock %}
